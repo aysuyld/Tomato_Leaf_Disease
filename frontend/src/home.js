@@ -159,7 +159,7 @@ export const ImageUpload = () => {
       try {
         let res = await axios({
           method: "POST",
-          url: process.env.REACT_APP_API_URL,
+          url: env.REACT_APP_API_URL,
           data: formData,
         });
         console.log(res.data);
